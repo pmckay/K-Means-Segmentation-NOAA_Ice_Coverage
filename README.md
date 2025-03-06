@@ -23,7 +23,7 @@ Clustering: nC = 3
   Post-tiling: 30,684 images
 
 ### Example Clustered images
-
+file:///Users/paige/Desktop/Screenshot%202025-03-06%20at%201.13.38%E2%80%AFPM.png
 
 ### Results Analysis
 
