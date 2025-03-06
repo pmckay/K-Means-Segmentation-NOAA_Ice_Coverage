@@ -1,15 +1,30 @@
 # K-Means-Segmentation-NOAA_Ice_Coverage
 
+###  YOLOv11 Ice Coverage K-Means Segmentation Model
+ Importance of this model in a paragraph, including why I decided to use K-Means to complete this task, the image amounts, 
+ 
+ To improve the model, talk about the augmentations and why the cluster amounts were chosen
+ 
+ Add a whole bunch of information about the model, the statistics I have yet to do, the overall trend detected with this dataset. 
 
-##this is two hashes
+### Ice Coverage Percentage
+This model is best at ________________
 
-### this is three hashes
+### Model Details
+Architecture: YOLOv11n
+Clustering: nC = 3
 
-#### this is 4
+### Dataset and Preprocessing
+#### Source Imagery:
+  Original resolution: 6048 × 4032\
+  Total source images: 480 to cover 10 meter increments of the transect\
+  Resolution range: ~12.21 MP to ~24.39 MP\
+  Condensed resolution: 1024 × 1024\
+  Post-tiling: 30,684 images
 
-**double astricks**
+### Example Clustered images
 
-This is normal text
+### Results Analysis
 
 
 ### Disclaimer
