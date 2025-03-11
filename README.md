@@ -22,6 +22,8 @@ Clustering: nC = 3
   Condensed resolution: 1024 × 1024\
   Post-tiling: 30,684 images
 
+
+
 ### Example Clustered images
 
 
