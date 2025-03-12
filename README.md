@@ -31,6 +31,13 @@ Clustering: nC = 3
   Resolution range: ~12.21 MP to ~24.39 MP\
   Condensed resolution: 1024 × 1024
 
+#### Processing:
+
+This streamlit interface was used to process these images, with 3 clusters selected. \
+  https://github.com/AI-Ecology-Lab/K-Means-Segmentation  
+
+  ____INFO ABOUT AUGMENTATIONS GO HERE__
+
 <br/>
 <br/>
 
