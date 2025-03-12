@@ -43,7 +43,15 @@ Clustering: nC = 3
 
 ### Results Analysis
 <img width="1150" alt="Screenshot 2025-03-08 at 1 08 05 PM" src="https://github.com/user-attachments/assets/ac0f897e-90ff-456a-85f3-6f711b763519" />
+
+Cluster 0 is white ice sheet
+Cluster 1 is blue water cover
+Cluster 2 is ice/water mix
+
 <img width="1148" alt="Screenshot 2025-03-08 at 1 08 18 PM" src="https://github.com/user-attachments/assets/96e83a41-e88e-42cf-9cb9-1d9ca3aabd05" />
+In this image, cluster 0 and 2 have been combined into the "ice" cover while cluster 1 has remained as "Water." This classification allowed for linear regression analysis of ice and water percent cover. 
+
+
 <img width="443" alt="Screenshot 2025-03-06 at 8 31 58 PM" src="https://github.com/user-attachments/assets/876626e4-7a31-4db9-922a-31a41cf39880" />
 
 <br/>
