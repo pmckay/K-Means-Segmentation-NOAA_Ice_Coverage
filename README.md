@@ -4,10 +4,10 @@
 Understanding Arctic ice coverage is essential for understanding changing climate conditions and Arctic amplification. The Arctic Ocean occupies about 6 million square miles around Earth's North Pole, but this region has lost about 73,000 km^2 of ice per year since 1979. To better understand this changing landscape and ice loss, I have developed an unsupervised clustering model for high-performance image analysis and calculating ice coverage percentage. 
 <br/>
 
-To improve generalization, the data augmentation technique, Contrast Limited Adaptive Histogram Equalization (CLAHE), was applied. I also used HSV Conversion to transform images from the red, green, and blue (RGB) color space to a hue, saturation, and value (HSV) color value, which is easier for this image processing task. I used slic from the skimage library to generate superpixels which divides the image into meaningful regions, which makes subsequent analysis, like clustering, more effective. This model was trained at a resolution of 1024×1024 with a single batch of 480 images on Google Colab's GPU. No annotations were done on this dataset because they were not needed to complete this model's objectives.
+To improve generalization, I applied the data augmentation technique, Contrast Limited Adaptive Histogram Equalization (CLAHE). I also used HSV Conversion to transform images from the red, green, and blue (RGB) color space to a hue, saturation, and value (HSV) color value, which is easier for this image processing task. I used slic from the skimage library to generate superpixels which divides the image into meaningful regions to make subsequent analysis, like clustering, more effective. This model was trained at a resolution of 1024×1024 with a single batch of 480 images on Google Colab's GPU. No annotations were done on this dataset because they were not needed to complete this model's objectives.
 <br/>
 
-For more background on K-Means segmentation, its use cases, and the code and image processing behind this model, please visit https://oceancv.org/book/ClusterSegmentation_Kmeans.html# created by Katie Bigham and Atticus Carter for the University of Washington's OCEAN 462C course Computer Vision Across the Marine Sciences. 
+For more background on K-Means segmentation, its use cases, and the code and image processing behind this model, please visit https://oceancv.org/book/ClusterSegmentation_Kmeans.html# created by Katie Bigham and Atticus Carter for the University of Washington's OCEAN 462C course "Computer Vision Across the Marine Sciences". 
 
  <br/>
 
@@ -68,7 +68,7 @@ Cluster 2 is ice/water mix
 
 <img width="1148" alt="Screenshot 2025-03-08 at 1 08 18 PM" src="https://github.com/user-attachments/assets/96e83a41-e88e-42cf-9cb9-1d9ca3aabd05" />
 
-In this image, cluster 0 and 2 have been combined into the "ice" cover while cluster 1 has remained as "Water." This classification allowed for linear regression analysis of ice and water percent cover. 
+In this image, clusters 0 and 2 have been combined into the "ice" cover while cluster 1 remains "Water." This classification allowed for linear regression analysis of ice and water percent cover. 
 
 <br/>
 
