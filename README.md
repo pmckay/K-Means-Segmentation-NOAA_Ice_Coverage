@@ -1,11 +1,13 @@
 # K-Means-Segmentation-NOAA_Ice_Coverage
 
 ###  YOLOv11 Ice Coverage K-Means Segmentation Model
-Understanding Arctic ice coverage is essential for understanding changing climate conditions and Arctic amplification. The Arctic Ocean occupies about 6 million square miles around Earth's North Pole but this region has lost about 73,000 km^2 of ice per year since 1979. To better understand this changing landscape and ice loss, I have developed an unsupervised clustering model utilizing _________  for high-performance image analysis and calculating ice coverage percentage. 
+Understanding Arctic ice coverage is essential for understanding changing climate conditions and Arctic amplification. The Arctic Ocean occupies about 6 million square miles around Earth's North Pole, but this region has lost about 73,000 km^2 of ice per year since 1979. To better understand this changing landscape and ice loss, I have developed an unsupervised clustering model for high-performance image analysis and calculating ice coverage percentage. 
 <br/>
 
-To improve generalization, the data augmentation technique CLAHE, was applied. The model was trained at a resolution of 1024×1024 with a single batch of 480 images on Google Colab's GPU. No annotations were done on this dataset because they were not needed to complete this model's objectives.
+To improve generalization, the data augmentation technique, Contrast Limited Adaptive Histogram Equalization (CLAHE), was applied. I also used HSV Conversion to transform images from the red, green, and blue (RGB) color space to a hue, saturation, and value (HSV) color value, which is easier for this image processing task. I used slic from the skimage library to generate superpixels which divides the image into meaningful regions, which makes subsequent analysis, like clustering, more effective. This model was trained at a resolution of 1024×1024 with a single batch of 480 images on Google Colab's GPU. No annotations were done on this dataset because they were not needed to complete this model's objectives.
 <br/>
+
+For more background on K-Means segmentation, its use cases, and the code and image processing behind this model, please visit https://oceancv.org/book/ClusterSegmentation_Kmeans.html# created by Katie Bigham and Atticus Carter for the University of Washington's OCEAN 462C course Computer Vision Across the Marine Sciences. 
 
  <br/>
 
@@ -17,7 +19,7 @@ This model works best for distinguishing color segmentation and aerial percent c
 
 
 ### Model Details
-Architecture: YOLOv11n\
+Architecture: This streamlit interface https://github.com/AI-Ecology-Lab/K-Means-Segmentation  
 Clustering: nC = 3
 
 3 clusters best cover the differential colors between ice, ice/water mix, and water.
@@ -31,12 +33,18 @@ Clustering: nC = 3
   Resolution range: ~12.21 MP to ~24.39 MP\
   Condensed resolution: 1024 × 1024
 
+  This imagery was sourced from the 2019 Aerial Survey of Ice Seals in the Bering and Chukchi Sea sourced from NOAA Fisheries but was analyzed specifically for ice coverage, and did not utilize the annotated dataset.  
+
 #### Processing:
 
 This streamlit interface was used to process these images, with 3 clusters selected. \
   https://github.com/AI-Ecology-Lab/K-Means-Segmentation  
 
-  ____INFO ABOUT AUGMENTATIONS GO HERE__
+__sklearn.cluster (KMeans):__ A machine learning tool for clustering data, useful in tasks like color quantization or image segmentation.
+
+__skimage.segmentation (slic):__ A function for segmenting images using a superpixel approach, useful for simplifying image data for analysis.
+
+__skimage.util (img_as_float):__ Converts image data to floating-point representation, often needed for processing images in scientific computations.
 
 <br/>
 <br/>
